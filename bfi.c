@@ -129,7 +129,7 @@ int main(int argc, char *argv[]) {
     do {
         switch(*ip[sp]) {
             case '>':    // >
-                if ((tp - cursect->cell) == (NUMCELLS - 2)) { // pointer arithmetic. find array position by subtracting array base address from current position
+                if ((tp - cursect->cell) == (NUMCELLS - 1)) { // pointer arithmetic. find array position by subtracting array base address from current position
                     if (cursect->next == NULL) { // if we are at the end of the tape, allocate a new section
                         create_section(cursect);
                     }
