@@ -1,2 +1,2 @@
 # bfi
-A Brainfuck interpreter in C, with memory limited only by hardware.
+A Brainfuck interpreter in C whose memory grows dynamically.
